@@ -26,14 +26,17 @@
       font-weight: bold;
     }
 
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      overflow: hidden;
-    }
+html,
+body {
+  min-height: 100vh; /* evita overflow causado por padding */
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  overflow: hidden; /* remove scroll */
+  box-sizing: border-box;
+}
 
+
+    
     body {
       display: flex;
       align-items: center;
